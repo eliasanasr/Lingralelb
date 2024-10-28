@@ -47,7 +47,7 @@ const primary = {
 const moduleTheme = {
   pharmacy: "#039D55",
   ecommerce: "#039D55",
-  food: "#039D55",
+  food: "#4c85c5",
   parcel: "#039D55",
 };
 const horizontalCardBG = "#E4FFF3";

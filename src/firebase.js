@@ -7,13 +7,13 @@ import {
 } from "firebase/messaging";
 import { getAuth } from "firebase/auth";
 const firebaseConfig = {
-  apiKey: "AIzaSyDFN-73p8zKVZbA0i5DtO215XzAb-xuGSE",
-  authDomain: "ammart-8885e.firebaseapp.com",
-  projectId: "ammart-8885e",
-  storageBucket: "ammart-8885e.appspot.com",
-  messagingSenderId: "1000163153346",
-  appId: "1:1000163153346:web:4f702a4b5adbd5c906b25b",
-  measurementId: "G-L1GNL2YV61",
+  apiKey: "AIzaSyAlXOJ2syaD2k65wk4CLAPmnaw1pjqD0Og",
+  authDomain: "lingralereact-5d8e1.firebaseapp.com",
+  projectId: "lingralereact-5d8e1",
+  storageBucket: "lingralereact-5d8e1.appspot.com",
+  messagingSenderId: "518433602471",
+  appId: "1:518433602471:web:fcd454955d6141852fd482",
+  measurementId: "G-Z645MNTWZM"
 };
 const firebaseApp = !getApps().length
   ? initializeApp(firebaseConfig)
@@ -33,7 +33,7 @@ const messaging = (async () => {
 export const fetchToken = async (setTokenFound, setFcmToken) => {
   return getToken(await messaging, {
     vapidKey:
-      "BOafs51MmDIomDbBlXrEdpFXJQ_-fzWggglK9OEro9gj1cbMfZOIRpHKIiNErt54B3w6zXeru3Ls45fILn2y5Ko",
+      "BP6KAcFLGJdlAdjaQtLmDwWg9IiCLtg4Yf4sBi2ENHbW5FFD_9KSUvgGrI2aY1FHIWXDf902yp65ePZDnoT2fdM",
   })
     .then((currentToken) => {
       if (currentToken) {
